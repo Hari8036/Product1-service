@@ -120,6 +120,7 @@ public class Product1Controller {
      @PutMapping("/update-product")
      public Object updateProduct(@RequestBody Product1 product1)
       {
+    	 
     	 logger.info("Product details"+product1.toString());
     	 return product1Service.updateProduct(product1);
      }
